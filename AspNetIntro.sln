@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro", "Intro\Intro.csproj", "{A91F36AC-4F37-479A-8500-1BA7581F57EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro.Api", "Intro.Api\Intro.Api.csproj", "{4ECAEB54-7008-4113-96B3-CDBD5567274C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro.Api.Web", "Intro.Api.Web\Intro.Api.Web.csproj", "{2E25CA10-B8D0-45E2-AEA6-8198CA7D766F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A91F36AC-4F37-479A-8500-1BA7581F57EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91F36AC-4F37-479A-8500-1BA7581F57EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91F36AC-4F37-479A-8500-1BA7581F57EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91F36AC-4F37-479A-8500-1BA7581F57EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECAEB54-7008-4113-96B3-CDBD5567274C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECAEB54-7008-4113-96B3-CDBD5567274C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECAEB54-7008-4113-96B3-CDBD5567274C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECAEB54-7008-4113-96B3-CDBD5567274C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E25CA10-B8D0-45E2-AEA6-8198CA7D766F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E25CA10-B8D0-45E2-AEA6-8198CA7D766F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E25CA10-B8D0-45E2-AEA6-8198CA7D766F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E25CA10-B8D0-45E2-AEA6-8198CA7D766F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D15A216-2939-400B-931E-112A022E7E86}
+	EndGlobalSection
+EndGlobal
