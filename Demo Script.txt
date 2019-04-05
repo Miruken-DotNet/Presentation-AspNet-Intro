@@ -1,0 +1,64 @@
+Demo Script
+
+========
+
+using Miruken.Mediate.Api;
+
+namespace Intro.Api.Student
+{
+    public class CreateStudent : IRequest<StudentData>
+    {
+        public CreateStudent()
+        {
+        }
+
+        public CreateStudent(StudentData student)
+        {
+            Student = student;
+        }
+
+        public StudentData Student { get; set; }
+    }
+}
+
+========
+
+        [Handles]
+        public StudentData CreateStudents(CreateStudent request)
+        {
+            var student = request.Student;
+            student.Id  = _students.Count + 1;
+            _students.Add(student);
+            return new StudentData
+            {
+                Id = student.Id
+            };
+        }
+
+
+========
+
+using FluentValidation;
+
+namespace Intro.Api.Student
+{
+    public class CreateStudentIntegrity : AbstractValidator<CreateStudent>
+    {
+        public CreateStudentIntegrity()
+        {
+            RuleFor(x => x.Student)
+                .Cascade(CascadeMode.StopOnFirstFailure)
+                .NotNull()
+                .SetValidator(new ValidateStudent());
+        }
+
+        private class ValidateStudent : AbstractValidator<StudentData>
+        {
+            public ValidateStudent()
+            {
+                RuleFor(x => x.FirstName).NotEmpty();
+                RuleFor(x => x.LastName).NotEmpty();
+            }
+        }
+    }
+}

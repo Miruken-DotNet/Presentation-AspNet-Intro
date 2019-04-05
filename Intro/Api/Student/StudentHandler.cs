@@ -18,17 +18,5 @@ namespace Intro.Api.Student
         {
             return new StudentResult(_students.ToArray());
         }
-
-        [Handles]
-        public StudentData CreateStudents(CreateStudent request)
-        {
-            var student = request.Student;
-            student.Id  = _students.Count + 1;
-            _students.Add(student);
-            return new StudentData
-            {
-                Id = student.Id
-            };
-        }
     }
 }
