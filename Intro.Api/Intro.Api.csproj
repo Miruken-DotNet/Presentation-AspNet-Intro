@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\CreateStudent.cs" />
     <Compile Include="Student\GetStudents.cs" />
     <Compile Include="Student\StudentData.cs" />
     <Compile Include="Student\StudentResult.cs" />
